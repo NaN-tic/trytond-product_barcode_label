@@ -23,24 +23,3 @@ Los códigos de barras disponibles son:
 * upca
 
 Si se dispone de la libreria 'barcodenumber' estos códigos serán validados.
-
-Módulos de los que depende
-==========================
-
-Instalados
-----------
-
-.. toctree::
-   :maxdepth: 1
-
-   /product/index
-   /product_barcode/index
-
-Dependencias
-------------
-
-* Producto_
-* `Códigos de producto`_
-
-.. _Producto: ../product/index.html
-.. _Códigos de producto: ../product_barcode/index.html

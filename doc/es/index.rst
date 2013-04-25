@@ -1,6 +1,6 @@
 =================================
 Etiquetas de códigos de productos
-==================================
+=================================
 
 Crea una etiqueta de código a partir del código de producto. El fichero lo podrá
 abrir o guardar en disco para después inserir en otro documento o imprimir.

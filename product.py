@@ -2,10 +2,10 @@
 #The COPYRIGHT file at the top level of this repository contains
 #the full copyright notices and license terms.
 
-from trytond.model import ModelView, ModelSQL, fields
+from trytond.model import ModelView, fields
 from trytond.pool import PoolMeta
 from trytond.pyson import Eval
-from trytond.transaction import Transaction
+
 
 import logging
 
@@ -45,7 +45,7 @@ class ProductCode:
             barcode = value.barcode.upper()
             number = value.number
             output = '/tmp/%s-%s' % (barcode, number) 
-            name = generate(barcode, number, output=output)
+            generate(barcode, number, output=output)
 
     def get_data(self, name):
         value = None

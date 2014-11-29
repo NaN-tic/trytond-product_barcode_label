@@ -40,7 +40,7 @@ setup(name='trytonzz_product_barcode_label',
         ],
     package_data={
         'trytond.modules.product_barcode_label': info.get('xml', []) \
-            + ['tryton.cfg', 'locale/*.po'],
+            + ['tryton.cfg', 'view/*.xml', 'locale/*.po']),
         },
     classifiers=[
         'Development Status :: 5 - Production/Stable',

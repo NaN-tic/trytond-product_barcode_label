@@ -6,19 +6,20 @@ The COPYRIGHT file at the top level of this repository contains the full copyrig
         <record model="ir.ui.view" id="product_barcode_view_tree">
             <field name="model">product.code</field>
             <field name="inherit" ref="product_barcode.product_barcode_view_tree"/>
-            <field name="arch" type="xml">
-                <![CDATA[
-                <data>
-                    <xpath
-                        expr="/tree/field[@name=&quot;number&quot;]"
-                        position="after">
-                        <button string="Create label" name="label"/>
-                        <field name="data"/>
-                    </xpath>
-                </data>
-                ]]>
-            </field>
+            <field name="name">product_barcode_tree</field>
         </record>
 
+        <!-- Wizard Product Code Label -->
+        <record model="ir.ui.view" id="product_code_label_file">
+            <field name="model">product.code.label.file</field>
+            <field name="type">form</field>
+            <field name="name">product_code_label_file</field>
+        </record>
+
+        <record model="ir.action.wizard" id="wizard_product_code_label">
+            <field name="name">Label</field>
+            <field name="wiz_name">product.code.label</field>
+            <field name="model">product.code</field>
+        </record>
     </data>
 </tryton>

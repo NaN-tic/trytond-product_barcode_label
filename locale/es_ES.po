@@ -2,6 +2,51 @@
 msgid ""
 msgstr "Content-Type: text/plain; charset=utf-8\n"
 
-msgctxt "field:product.code,data:"
+msgctxt "error:product.code.label:"
+msgid "An IO error when generate barcode in \"%(number)s\" code."
+msgstr ""
+"IO Error cuando se generaba el código de barras del código \"%(number)s\"."
+
+msgctxt "error:product.code.label:"
+msgid "Error when generate barcode in \"%(number)s\" code."
+msgstr "Error cuando se generaba el código de barras del código \"%(number)s\"."
+
+msgctxt "error:product.code.label:"
+msgid "Select a barcode in \"%(number)s\" code."
+msgstr "Selecciona el tipo de código del código \"%(number)s\"."
+
+msgctxt "field:product.code.label.file,file_name:"
+msgid "File Name"
+msgstr "Nombre del fichero"
+
+msgctxt "field:product.code.label.file,id:"
+msgid "ID"
+msgstr "ID"
+
+msgctxt "field:product.code.label.file,label:"
 msgid "Label"
-msgstr "Etiqueta"
+msgstr "Código barras"
+
+msgctxt "model:ir.action,name:wizard_product_code_label"
+msgid "Label"
+msgstr "Código barras"
+
+msgctxt "model:product.code.label.file,name:"
+msgid "Product Code Label File"
+msgstr "Fichero código de barras"
+
+msgctxt "view:product.code.label.file:"
+msgid "Label"
+msgstr "Código barras"
+
+msgctxt "view:product.code.label.file:"
+msgid "Product Barcode Label"
+msgstr "Código de barras del producto"
+
+msgctxt "view:product.code:"
+msgid "Label"
+msgstr "Código barras"
+
+msgctxt "wizard_button:product.code.label,start,end:"
+msgid "Done"
+msgstr "Realizado"

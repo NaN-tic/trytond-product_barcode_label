@@ -15,8 +15,9 @@ __metaclass__ = PoolMeta
 try:
     from barcode import generate
 except ImportError:
+    logger = logging.getLogger(__name__)
     message = 'Unable to import pyBarcode: pip install pyBarcode'
-    logging.getLogger('product_barcode_label').error(message)
+    logger.error(message)
     raise Exception(message)
     
 

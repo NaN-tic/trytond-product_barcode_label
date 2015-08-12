@@ -86,7 +86,7 @@ class ProductCodeLabel(Wizard):
 
         try:
             with open(filename, 'rb') as file_p:
-                label = buffer(file_p.read())
+                label = fields.Binary.cast(file_p.read())
         except IOError:
             self.raise_user_error('label_io_error', {
                 'number': code.barcode,

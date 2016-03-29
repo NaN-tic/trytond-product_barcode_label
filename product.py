@@ -10,7 +10,6 @@ import tempfile
 import logging
 
 __all__ = ['ProductCode', 'ProductCodeLabelFile', 'ProductCodeLabel']
-__metaclass__ = PoolMeta
 
 try:
     from barcode import generate
@@ -22,6 +21,7 @@ except ImportError:
     
 
 class ProductCode:
+    __metaclass__ = PoolMeta
     __name__ = 'product.code'
 
     @classmethod
